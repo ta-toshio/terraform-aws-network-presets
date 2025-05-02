@@ -1,0 +1,6 @@
+region  = "ap-northeast-1"
+project = "myproject"
+vpc_cidr = "10.0.0.0/16"
+
+# Amplify設定
+amplify_repository_url = "https://github.com/xxxx/xxxx"

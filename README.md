@@ -22,7 +22,7 @@ myprojectサービスをデプロイする前に、初期セットアップを�
 ### 手動セットアップ
 
 ```bash
-cd terraform/aws/setup
+cd terraform/setup
 
 # 初期化
 terraform init
@@ -59,8 +59,7 @@ terraform apply
 
 ```bash
 # 開発環境の場合
-cd terraform/aws/dev
-cp terraform.tfvars.example terraform.tfvars
+cd terraform/dev
 # エディタで開いて必要な値を設定
 ```
 
@@ -73,7 +72,7 @@ cp terraform.tfvars.example terraform.tfvars
 開発環境は最小構成で、ALBなしの設定をデフォルトとしています。
 
 ```bash
-cd terraform/aws/deploy/dev
+cd terraform/deploy/dev
 
 # 初期化
 terraform init
@@ -99,7 +98,7 @@ terraform apply
 ステージング環境は本番に近い構成を持ちますが、リソースサイズは若干小さめに設定されています。
 
 ```bash
-cd terraform/aws/staging
+cd terraform/staging
 
 # 初期化
 terraform init
@@ -125,7 +124,7 @@ terraform apply
 本番環境はセキュリティを重視した構成がデフォルトとなっています。
 
 ```bash
-cd terraform/aws/production
+cd terraform/production
 
 # 初期化
 terraform init
