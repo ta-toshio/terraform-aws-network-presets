@@ -1,0 +1,20 @@
+# ローカルの状態ファイル
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.*.backup
+
+# 変数ファイル（機密情報を含む可能性があるため）
+*.tfvars
+*.tfvars.json
+
+# CLI設定ファイル
+.terraformrc
+terraform.rc
+
+# ログファイル
+crash.log
+crash.*.log
+
+# ロックファイル
+.terraform.lock.hcl 
